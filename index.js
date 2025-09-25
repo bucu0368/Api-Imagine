@@ -156,6 +156,10 @@ app.get('/generated/:imageId.png', (req, res) => {
   res.send(imageBuffer);
 });
 
+app.use((req, res) => {
+  res.status(404).json({ error: 'Endpoint not found' });
+});
+
 app.listen(5000, '0.0.0.0', () => {
   console.log('Server running on port 5000');
 });
