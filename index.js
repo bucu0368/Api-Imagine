@@ -2,7 +2,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const express = require('express');
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "AIzaSyDYrzBFmFiD39OrARGPKaDhqv9XsUaxlWw");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "AIzaSyCWCshVj-YE0H4VbvQMO7xXp5pDNDYPiF4");
 const app = express();
 
 const VALID_API_KEY = "bucu";
